@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WEB_Api.Models;
+using WEB_Api.Models.HotelDto;
 
 namespace WEB_Api.Controllers
 {
@@ -9,12 +10,12 @@ namespace WEB_Api.Controllers
     public class CosmicHotelController : ControllerBase
     {
         [HttpGet]
-        public IEnumerable<Hotel> GetHotels()
+        public IEnumerable<HotelsDTO> GetHotels()
         {
-            return new List<Hotel>
+            return new List<HotelsDTO>
             {
-                new Hotel { Id = 1, Name = "Bunglow" },
-                new Hotel { Id = 2, Name = "Villa" }
+                new HotelsDTO { Id = 1, Name = "Bunglow" },
+                new HotelsDTO { Id = 2, Name = "Villa" }
             };
         }
     }
