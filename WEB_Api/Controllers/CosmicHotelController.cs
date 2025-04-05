@@ -17,6 +17,8 @@ namespace WEB_Api.Controllers
                 new HotelsDTO { Id = 1, Name = "Bunglow" },
                 new HotelsDTO { Id = 2, Name = "Villa" }
             };
+
+
         }
     }
 }
