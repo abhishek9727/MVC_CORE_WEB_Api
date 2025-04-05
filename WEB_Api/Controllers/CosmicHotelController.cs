@@ -16,6 +16,8 @@ namespace WEB_Api.Controllers
                 new Hotel { Id = 1, Name = "Bunglow" },
                 new Hotel { Id = 2, Name = "Villa" }
             };
+
+
         }
     }
 }
